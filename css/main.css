@@ -1,8 +1,4 @@
-/***********************************
-              GRID STYLES
-***********************************/
-
-/* I used a two-column grid so the cards match the layout in the mockup. */
+/* Makes the cards into a grid */
 .emojis {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -11,10 +7,8 @@
 }
 
 /***********************************
-             CARD STYLES
+                GRID STYLES
 ***********************************/
-
-/* I used flexbox so the content inside each card stacks vertically. */
 .emoji {
   display: flex;
   flex-direction: column;
@@ -23,14 +17,17 @@
   padding: 1rem;
 }
 
-/* This centers the emoji and makes it larger. */
+/***********************************
+                CARD STYLES
+***********************************/
+/* Centers the emoji */
 .emoji .icon {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
-/* This styles the heading and adds a line under it. */
+/* Styles the card heading */
 .emoji h2 {
   font-size: 1.2rem;
   margin: 0;
@@ -38,12 +35,12 @@
   border-bottom: 1px solid #ccc;
 }
 
-/* This adds space between the description and the button. */
+/* Adds space under the text */
 .emoji p {
   margin-bottom: 1rem;
 }
 
-/* The auto margin uses the extra flex space and pushes the button to the bottom. */
+/* Keeps the button at the bottom */
 .emoji a {
   margin-top: auto;
   display: block;
