@@ -1,0 +1,55 @@
+/***********************************
+              GRID STYLES
+***********************************/
+
+/* I used a two-column grid so the cards match the layout in the mockup. */
+.emojis {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 700px;
+}
+
+/***********************************
+             CARD STYLES
+***********************************/
+
+/* I used flexbox so the content inside each card stacks vertically. */
+.emoji {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #777;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+/* This centers the emoji and makes it larger. */
+.emoji .icon {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* This styles the heading and adds a line under it. */
+.emoji h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* This adds space between the description and the button. */
+.emoji p {
+  margin-bottom: 1rem;
+}
+
+/* The auto margin uses the extra flex space and pushes the button to the bottom. */
+.emoji a {
+  margin-top: auto;
+  display: block;
+  padding: 0.75rem 1rem;
+  background: #8035b3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
